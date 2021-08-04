@@ -23,6 +23,6 @@ Manuel Ortega
 3. Use your CLI to navigate to the project folder
 4. Start the server with command: `node server.js`
 5. Open your browser and enter `localhost:8000`
-6. Enter a valid zip code for germany
+6. Enter a zip code
 7. Enter your feeling
 8. Click the button `Generate`
