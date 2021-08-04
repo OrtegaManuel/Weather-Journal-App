@@ -1,5 +1,5 @@
 // Setup empty JS array to act as endpoint for all routes
-const projectData = [];
+let projectData = {};
 
 // Require Express to run server and routes
 const express = require('express');
@@ -43,5 +43,5 @@ app.post('/addData', function (req, res) {
     userFeeling: req.body.userFeeling,
   };
   // adding data to the array 'projectData'
-  projectData.unshift(newEntry);
+  projectData = newEntry;
 });

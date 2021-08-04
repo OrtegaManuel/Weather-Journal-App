@@ -41,7 +41,7 @@ const getWeatherURL = async (baseURL, zip, apiKey) => {
 
 /* Function to POST data */
 const postData = async (url = '', data = {}) => {
-  console.log(data);
+  // console.log(data);
   const response = await fetch(url, {
     method: 'POST',
     credentials: 'same-origin',
@@ -67,9 +67,9 @@ const updateUI = async (url = '') => {
   const request = await fetch(url);
   try {
     const allData = await request.json();
-    document.getElementById('date').innerHTML = allData[0].date;
-    document.getElementById('temp').innerHTML = allData[0].temperature + '°C';
-    document.getElementById('content').innerHTML = allData[0].userFeeling;
+    document.getElementById('date').innerHTML = allData.date;
+    document.getElementById('temp').innerHTML = allData.temperature + '°C';
+    document.getElementById('content').innerHTML = allData.userFeeling;
   } catch (error) {
     console.log('error', error);
   }
