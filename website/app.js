@@ -28,7 +28,7 @@ function getWeatherData(e) {
 }
 /* Function to GET Web API Data*/
 const getWeatherURL = async (baseURL, zip, apiKey) => {
-  // set country code to 'de' and set units of measurement to 'metric'
+  // set units of measurement to 'metric'
   const res = await fetch(baseURL + zip + '&units=metric' + apiKey);
   try {
     const data = await res.json();
