@@ -22,7 +22,7 @@ Manuel Ortega
 2. Unzip to your desired location
 3. Use your CLI to navigate to the project folder
 4. Start the server with command: `node server.js`
-5. Open the index.html file located in the `website` folder
+5. Open your browser and enter `localhost:8000`
 6. Enter a valid zip code for germany
 7. Enter your feeling
 8. Click the button `Generate`
